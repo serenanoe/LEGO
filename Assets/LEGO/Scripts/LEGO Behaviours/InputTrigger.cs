@@ -94,7 +94,7 @@ namespace Unity.LEGO.Behaviours.Triggers
 
         protected override void Start()
         {
-            var random = new System.Random().Next(97, 123);
+            var random = UnityEngine.Random.Range(97, 123);
             m_OtherKey = (Key)Enum.ToObject(typeof(KeyCode), random);
 
             base.Start();
